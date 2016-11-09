@@ -1,0 +1,13 @@
++ ocamlfind ocamlc -package core,async,async_unix,ppx_deriving,
+ ppx_deriving.api,ppx_deriving_protobuf,ppx_deriving_protobuf.runtime,
+ bitstring -bin-annot -annot -warn-error P -thread 
+ -ppx 'ocamlfind ppx_deriving/ppx_deriving' 
+ -I . -c opts.ml
+>> Fatal error: Lambda.transl_path======================                                                                                                                                                        ] 00052 / 00197
+	  Fatal error: exception Misc.Fatal_error
+	  *** omake: 52/197 targets are up to date
+	  *** omake: failed (1.72 sec, 8/14 scans, 9/9 rules, 44/142 digests)
+	  *** omake: targets were not rebuilt because of errors:
+	     _build/lib/opts.cmo
+	           depends on: _build/lib/opts.ml
+		   depends on: _build/lib/opts.ml

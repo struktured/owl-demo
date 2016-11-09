@@ -1,0 +1,12 @@
+#require "owl"
+#require "csv"
+
+let polls_file = "presidential_polls.csv"
+let polls_array = Csv.load polls_file |> Csv.to_array
+
+open Owl
+module M = Dense.Real
+
+(* let polls = Owl_dense_real.of_arrays csv_array*)
+
+
